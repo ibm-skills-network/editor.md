@@ -16,6 +16,8 @@ jobs:
   publish:
     name: npm package
     runs-on: ubuntu-latest
+    env:
+      secrets: inherit
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
